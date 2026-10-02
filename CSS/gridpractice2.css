@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 400px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 120px repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.box{
+    border: 2px solid black;
+}
+
+.left{
+    grid-column: 1/2 ;
+    grid-row: 1/4 ;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.right{
+    grid-column: 1/6;
+    grid-row: 1/4;
+    display: grid;
+    gap: 10px;
+}
+
+.one{
+    background-color: red;
+}
+
+.two{
+background-color: turquoise;
+grid-row: 1/2;
+grid-column: 2/span 2;
+}
+
+.three{
+background-color: rgb(223, 171, 15);
+grid-row: 1/2;
+grid-column: 4/span 2;
+}
+
+.four{
+    background-color: rgb(223, 171, 15);
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.five{
+    background-color: white;
+    grid-row: 2/3;
+    grid-column: 3/span 2;
+}
+
+.six{
+    background-color: red;
+    grid-column: 5/6;
+    grid-row: 2/span 2;
+}
+
+.seven{
+    background-color: red;
+    grid-row: 3/4;
+    grid-column: 2/span 2;
+}
+
+.eight{
+    background-color: white;
+}
+
+.nine{
+    background-color: turquoise;
+    grid-row: 3/4;
+    grid-column: 4/5 ;
+}

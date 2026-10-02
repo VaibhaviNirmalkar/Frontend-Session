@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 400px;
+    width: 700px;
+    border: 2px solid black;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.box{
+    border: 2px solid black;
+}
+
+.one{
+    background-color: aqua;
+    grid-row: 1/2;
+    grid-column: 1/ span 2;
+}
+
+.two{
+    background-color: magenta;
+    grid-row: 1/span 2;
+    grid-column: 3/4;
+}
+
+.three{
+    background-color: yellow;
+    grid-row: 2/3;
+    grid-column: 1/ span 2;
+}
+
+.four{
+    background-color: rgb(164, 222, 76);
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.five{
+    background-color: orange;
+    grid-row: 3/4;
+    grid-column: 2/ span 2;
+}

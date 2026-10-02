@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        
+        .des p{
+            color: yellow;
+        }
+
+        .child > p {
+            color: red;
+
+        }
+
+    </style>
+
+<body>
+    
+    <div class="des">
+        <h2>Descendant Combinator(space)</h2>
+        <p>Paragraph 1</p>
+
+        <div>
+            <p>paragraph 2</p>
+        </div>
+
+        <section>
+            <p>Paragraph 3</p>
+        </section>
+    </div>
+
+        <div class="child">
+        <h2>Child Combinator(>)</h2>
+        <p>Paragraph 1</p>
+
+        <div>
+            <p>paragraph 2</p>
+        </div>
+
+        <section>
+            <p>Paragraph 3</p>
+        </section>
+
+        <div class="adj">
+        <h2>Adjacent/Next Sibling Combinator(+)</h2></div>
+        <p>Paragraph 1</p>
+
+        <div>
+            <p>paragraph 2</p>
+        </div>
+
+        <section>
+            <p>Paragraph 3</p>
+        </section>
+
+        <div class="gen">
+        <h2>General Combinator(~)</h2></div>
+        <p>Paragraph 1</p>
+
+        <div>
+            <p>paragraph 2</p>
+        </div>
+
+        <section>
+            <p>Paragraph 3</p>
+        </section>
+</body>
+</html>
